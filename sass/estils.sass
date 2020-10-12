@@ -1,0 +1,40 @@
+
+/* Definicio de colors en variables */
+$azul-oscuro: #19226d
+$azul-medio: #3672b3
+$azul-claro: #d9f2fc
+$verde-newsletter: #1abc9c
+$gris-enlaces: #666
+$blanc: #FFFFFF
+$negre: #000000
+
+/* importacio codi font bootstrap 4 */
+@import bootstrap-4.0.0/scss/bootstrap.scss
+
+/* estil general del body */
+body 
+    font-family: 'Roboto', sans-serif // tipologia text Roboto
+    font-size: 14px                   // mida del text
+
+/* estil general del header */
+header 
+    width: 100%                       // ocupa tota l'amplada de la pàgina (adaptable)
+    background-color: $blanc          // color de fons
+
+/* estil general del footer */
+footer 
+    margin: 0px                       // treure marge per defecte
+    padding: 0px                      // treure espaiat per defecte
+
+// importacio del sass de la capcalera
+@import capcalera      
+// importacio del sass del menu de categories               
+@import menu          
+// importacio del sass del carrousel                
+@import carrousel                  
+// importacio del sass del contingut   
+@import contingut   
+// importacio del sass del peu de pagina                  
+@import peu                  
+// importacio del sass del RWD         
+@import responsive                    

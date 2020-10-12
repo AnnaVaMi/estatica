@@ -1,0 +1,119 @@
+/* Dispositius petits (tablets i mobils, 462px i inferiors) */
+@media (max-width: 462px) 
+    #newsletter                                 /* contenidor elements del newsletter */
+        input                                   /* input per al correu electronic */
+            border-top-right-radius: 0.3em      // posar arrodoniment cantonada superior dreta
+            border-bottom-right-radius: 0.3em   // posar arrodoniment cantonada inferior dreta
+             
+        button                                  /* boto newsletter */
+            display: block                      // posar boto a sota l'input
+            margin-top: 10px                    // marge superior
+            border-top-left-radius: 0.3em       // posar arrodoniment cantonada superior esquerra
+            border-bottom-left-radius: 0.3em    // posar arrodoniment cantonada inferior esquerra
+
+    
+/* Dispositius petits (tablets i mobils, 575px i inferiors) */
+@media (max-width: 575px) 
+    .nav-sup                                    /* contenidor dels elements de la capcalera */
+        flex-direction: column                  // alinear elements verticalment
+
+    #nav-sup .navbar-nav                        /* elements clicables */
+        flex-direction: row                     // alinear elements horitzontalment
+
+    #nav-sup #logo                              /* logo de la capcalera */
+        width: 40%                              // amplada mes gran adaptable
+        margin-right: 0px                       // treure marge dret
+        
+    .bg-image                                   /* mida imatges carrousel */
+        height: 200px!important                 // reduir alcada
+
+    #carousel-text-box                          /* quadre de text del carrousel */
+        width: 80%!important                    // amplada mes gran
+        padding: 6px                            // reduir espaiat
+        margin-left: 10%!important              // reduir marge esquerra adaptable
+        margin-bottom: 4%                       // reduir marge inferior adaptable
+
+        p, h6                                   /* text i titol quadre de text */
+            font-size: 10px                     // reduir mida text
+    
+    #icons, #recientes, #vendidos               /* contenidors icones, productes vistos recentment i mes venuts */
+        .row                                    /* fila de cada bloc */
+            flex-direction: column              // alinear verticalment
+            align-items: center                 // centrar horitzontalment
+
+        .col-sm-3                               /* columna de cada bloc */
+            width: 85%                          // reduir amplada adaptable
+    
+    #icons                                      /* contenidor icones */
+        .icon                                   /* contenidor per a cada icona i text que l'acompanya */
+            padding-bottom: 10px                // reduir espaiat inferior
+
+            p                                   /* text que acompanya l'icona */
+                padding-right: 15px             // reduir espaiat dret
+                padding-left: 15px              // reduir espaiat esquerra
+
+    #links                                      /* contenidor seccio enllacos */
+        .row                                    /* contenidor de la fila d'enllacos */
+            text-align: center                  // centrar verticalment
+
+        .col-sm-3:not(:last-child)              /* contenidor de cada grup d'enllacos */
+            padding-bottom: 16px                // espaiat inferior
+
+    #copyright .peu-pagina                      /* contenidor copyright */
+        text-align: center                      // centrar text horitzontalment
+
+
+/* Dispositius petits (tablets i mobils, 767px i inferiors) */
+@media (max-width: 767px) 
+    #nav-inf                                    /* contenidor contingut menu de categories */
+        justify-content: flex-start             // alinear categories a l'esquerra pel boto 'hamburguesa'
+
+        .dropdown-menu                          /* submenus de categories */
+            display: none                       // amagar submenus pels dispositius mobils
+    
+
+/* Dispositius mitjans (escritoris mitjans i tablets, 1024px i inferiors) */
+@media (max-width: 1024px) 
+    #nav-inf .dropdown-menu a                   /* enllacos submenus de categories */
+        font-size: 9px!important                // reduir mida text
+        padding: 2px                            // reduir espaiat
+
+        .dropdown-menu.column-1                 /* submenus de categories de 1 columna */
+            min-width: 100px!important          // reduir amplada
+
+        .dropdown-menu.columns-3                /* submenus de categories de 3 columnes */
+            min-width: 350px!important          // reduir amplada
+
+        .dropdown-menu.columns-2                /* submenus de categories de 2 columnes */
+            min-width: 250px!important          // reduir amplada
+
+    .bg-image                                   /* mida imatges carrousel */
+        height: 320px                           // reduir alcada
+
+    #carousel-text-box                          /* quadre de text del carrousel */
+        width: 60%                              // amplada mes gran adaptable
+
+
+/* Dispositius grans (escritoris grans, 1100px i inferiors) */
+@media (max-width: 1100px)      
+    #nav-inf .dropdown-menu a                   /* enllacos submenus de categories */
+        font-size: 12px                         // reduir mida text
+
+        .dropdown-menu.columns-3                /* submenus de categories de 3 columnes */
+            min-width: 500px                    // reduir amplada
+
+        .dropdown-menu.columns-2                /* submenus de categories de 2 columnes */
+            min-width: 300px                    // reduir amplada
+
+
+/* Dispositius grans (escritoris grans, 1200px i superiors) */
+@media (min-width: 1200px) 
+    #nav-sup nav, #nav-inf nav                  /* contenidors dels elements de la capcalera i menu categories */
+        max-width: 1140px                       // amplada maxima mes gran pel contingut
+
+    .contingut                                  /* contenidor per a cada seccio */ 
+        max-width: 1140px                       // amplada maxima mes gran pel contingut
+
+    .peu-pagina                                 /* contenidor pels enllacos i pel copyright */
+        max-width: 1140px                       // amplada maxima mes gran pel contingut
+    

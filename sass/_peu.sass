@@ -1,0 +1,38 @@
+
+.peu-pagina                         /* contenidor pels enllacos i pel copyright */
+    max-width: 960px                // amplada maxima
+
+#links                              /* contenidor seccio enllacos */
+    background-color: $azul-medio   // color fons
+    color: $blanc                   // color text
+    padding-top: 30px               // espaiat superior
+    padding-bottom: 30px            // espaiat inferior
+    
+    h6                              /* titol de cada grup d'enllacos */
+        font-weight: bold           // text negreta
+        text-transform: uppercase   // text majuscules
+    
+    ul                              /* llista d'enllacos */
+        list-style-type: none       // treure estil de llista per defecte
+        margin: 0                   // treure marge per defecte
+        padding: 0                  // treure espaiat per defecte
+
+    a                               /* enllacos */
+        text-decoration: none       // treure decoracio per defecte
+        color: $blanc               // color text
+
+    a:hover                         /* enllacos quan passa mouse per sobre */
+        color: $azul-oscuro         // color text
+
+#copyright                          /* contenidor seccio copyright */
+    background-color: $azul-oscuro  // color fons
+    color: $blanc                   // color text
+    display: flex                   // Flexbox
+    align-items: center             // centrar verticalment
+
+    .peu-pagina p                   /* text copyright */
+        margin-top: 10px            // marge superior
+        margin-bottom: 10px         // marge inferior
+        
+    span                            /* tall de text copyright */
+        font-weight: bold           // text negreta

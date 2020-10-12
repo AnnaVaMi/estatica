@@ -1,0 +1,94 @@
+
+#all-contingut                          /* contenidor amb tot el contingut */
+    padding-bottom: 70px                // espaiat inferior
+    padding-top: 35px                   // espaiat superior
+    background-color: $azul-claro       // color fons
+
+    h6                                  /* titols */
+        font-weight: bold               // negreta
+
+.contingut                              /* contenidor per a cada seccio */ 
+    max-width: 960px                    // amplada maxima
+
+.icon                                   /* contenidor per a cada icona i text que l'acompanya */
+    font-size: 50px                     // mida icona
+    text-align: center                  // centrar horitzontalment
+    padding: 0px 10px 30px 10px         // espaiat
+
+    i                                   /* icona */
+        padding-bottom: 30px            // espaiat inferior
+        color: $azul-medio              // color icona
+
+    p                                   /* text a sota l'icona */
+        font-size: 14px                 // mida text
+
+.title-section                          /* titols de les seccions mes venuts i vistos recentment */
+    text-align: center                  // centrar horitzontalment
+    text-transform: uppercase           // text en majuscules
+    padding-bottom: 10px                // espaiat inferior
+    color: $azul-oscuro                 // color text
+        
+#recientes                              /* contenidor productes vistos recentment */ 
+    padding-bottom: 25px                // espaiat inferior
+
+#vendidos p                             /* text que acompanya el titol dels mes venuts */
+    text-align: center                  // centrar horitzontalment
+
+#recientes .col-sm-3:hover,#vendidos .col-sm-3:hover    /* contenidor que encapsula imatge i text de cada producte dels vistos recentmenti mes venuts quan passa mouse per sobre */
+    opacity: 0.5                                        // transparencia del 50% per la imatge i el text
+
+.ver-todos                              /* boto ver todos */
+    text-align: center                  // centrar horitzontalment
+    
+    button                              /* boto */
+        padding: 10px                   // espaiat del text interior del boto
+        margin-top: 15px                // marge superior
+        width: 110px                    // amplada del boto
+        color: $azul-medio              // color text
+        background-color: $blanc        // color fons
+        border-color: $azul-medio       // color voltant
+        font-weight: bold               // text negreta
+        font-size: 14px                 // mida text
+
+    button:hover                        /* boto al passar mouse per sobre */
+        color: $blanc                   // color text
+        background-color: $azul-medio   // color fons
+        border-color: $blanc            // color voltant
+		
+figcaption span                         /* un tros del text que acompanya les imatges de les dues seccions */
+    color: $azul-oscuro                 // color text
+    font-weight: bold                   // text negreta
+	
+.producte, .producte:hover              /* enllac de cada producte i quan passa el mouse per sobre */
+    text-decoration: none               // treure decoracio per defecte
+    color: $negre                       // color text
+
+#newsletter                             /* contenidor elements del newsletter */
+    background-color: $verde-newsletter // color fons
+    text-align: center                  // centrar horitzontalment
+    color: $blanc                       // color text
+    padding-top: 35px                   // espaiat superior
+    padding-bottom: 35px                // espaiat inferior
+
+    input                               /* input per al correu electronic */
+        width: 340px                    // amplada de l'input
+        border-color: $azul-medio       // color voltant
+        border-top-right-radius: 0em    // treure arrodoniment cantonada superior dreta
+        border-bottom-right-radius: 0em // treure arrodoniment cantonada inferior dreta
+        font-size: 14px                 // mida text
+
+    button                              /* boto newsletter */
+        color: $blanc                   // color text
+        background-color: $azul-medio   // color fons
+        border-color: $azul-medio       // color voltant
+        border-top-left-radius: 0em     // treure arrodoniment cantonada superior esquerra
+        border-bottom-left-radius: 0em  // treure arrodoniment cantonada inferior esquerra
+        font-size: 14px                 // mida text
+
+    button:hover                        /* boto newsletter quan passa mouse per sobre */
+        color: $azul-medio              // color text
+        background-color: $blanc        // color fons
+        border-color: $azul-medio       // color voltant
+    
+.form-inline                            /* contenidor dels elements del formulari */
+    justify-content: center             // centrar horitzontalment

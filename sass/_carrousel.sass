@@ -1,0 +1,46 @@
+/*#carousel 
+    position: relative
+    display: flex
+    align-items: flex-end*/
+    
+.bg-image                                        /* mides imatge */                             
+    height: 500px                                // alcada
+    width: 100%                                  // l'amplada ocupa tota la pàgina adaptable
+
+.img-destacado1                                  /* contenidor d'una imatge */
+    background-image: url(../img/destacado.jpg)  // assignacio imatge com a fons amb url
+
+.img-destacado2                                  /* contenidor d'una imatge */
+    background-image: url(../img/destacado2.jpg) // assignacio imatge com a fons amb url
+
+.img-destacado3                                  /* contenidor d'una imatge */
+    background-image: url(../img/destacado3.jpg) // assignacio imatge com a fons amb url
+
+.bg-image-destacado                              /* depenent de la mida del contenidor es fara servir aquesta posicio o la de sota */
+	background-size: cover                       // adaptar la mida de la imatge al seu contenidor tallant-la
+    background-position: center bottom           // posicionar imatge al centre baix del contenidor
+
+.bg-center-center                                /* depenent de la mida del contenidor es fara servir aquesta posicio o la de sobre */
+    background-position: center center           // posicionar imatge al centre del contenidor
+
+#carousel-text-box                               /* quadre de text del carrousel */
+    background-color: $azul-oscuro               // color fons
+    position: absolute                           // posicio relativa al carrousel
+    z-index: 1                                   // portar el quadre al davant del carrousel
+    padding: 20px                                // espaiat del text dins el quadre
+    width: 30%                                   // amplada variable segons mida de la pagina
+    height: auto                                 // alçada automatica adaptable
+    left: 0                                      // treure posicio
+    bottom: 0                                    // treure posicio
+    margin-left: 20%                             // marge esquerra adaptable
+    margin-bottom: 4%                            // marge inferior adaptable
+    color: $blanc                                // color text
+    border: 1px solid $blanc                     // voltant del quadre
+
+    h6                                           /* titol quadre de text */
+        text-transform: uppercase                // text majuscules
+        font-weight: bold                        // text negreta
+        
+    p                                            /* text requadre */
+        padding-bottom: 0px                      // treure espaiat inferior predeterminat
+        margin-bottom: 0px                       // treure marge inferior predeterminat

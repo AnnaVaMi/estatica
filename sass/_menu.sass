@@ -1,0 +1,54 @@
+
+#nav-inf                                /* contenidor contingut menu de categories */
+    display: flex                       // Flexbox
+    justify-content: center             // centrar horitzontalment
+    width: 100%                         // amplada ocupa 100% pagina
+
+    nav                                 /* menu navegacio bootstrap */
+        max-width: 960px                // amplada maxima
+
+    .navbar                             /* classe menu navegacio bootstrap */
+        width: 100%                     // amplada ocupa 100% del contenidor
+
+    .navbar-nav                         /* opcions menu navegacio */
+        width: 100%                     // amplada ocupa 100% del contenidor
+        display: flex                   // Flexbox
+        justify-content: space-around   // repartir opcions per tota l'amplada amb el mateix espai entre elles
+
+    li a                                /* enllacos opcions */
+        color: $gris-enlaces            // color text
+
+    li a:hover                          /* enllacos opcions quan passa mouse per sobre */
+        color: $azul-medio              // color text
+
+/*.dropdown-menu 
+    display: none
+    position: absolute
+    background-color: $blanc
+    min-width: 160px
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    z-index: 1
+    margin: 0px*/
+
+.dropdown-menu                          /* submenus de categories */
+    a                                   /* enllacos */
+        padding: 6px 20px               // espaiat entre enllacos
+        font-size: 14px                 // mida text
+
+    a:hover                             /* enllacos quan es passa per sobre */
+        background-color: $azul-medio   // color fons
+        color: $blanc!important         // color text sobreescrivint
+
+.dropdown:hover .dropdown-menu          /* submenus de categories */
+    display: block                      // mostrar elements un a sota l'altre
+
+.dropdown-menu.columns-3                /* submenus de categories de 3 columnes */
+	min-width: 600px                    // amplada minima
+
+.dropdown-menu.columns-2                /* submenus de categories de 2 columnes */
+	min-width: 400px                    // amplada minima
+
+.multi-column-dropdown                  /* classe pels submenus que tenen mes d'una columna */
+    list-style: none                    // treure estil de la llista per defecte
+    margin: 0px                         // treure marge per defecte
+    padding: 0px                        // treure espaiat per defecte

@@ -1,0 +1,55 @@
+
+#nav-sup nav                              /* barra navegacio capcalera */
+    max-width: 960px                      // amplada maxima
+
+.bg-light                                 /* classe per donar color de fons barra navegacio bootstrap */
+    background-color: $blanc!important    // sobreescriure per color blanc
+
+#nav-sup                                  /* contenidor dels elements de la capcalera */
+    display: flex                         // Flexbox
+    justify-content: center               // centrar horitzontalment
+    flex-wrap: wrap                       // elements una sota l'altre quan l'amplada disminueix
+    width: 100%                           // ocupa tota l'amplada de la pàgina
+    border-bottom: 1px solid #DCDCDC      // voltant inferior color gris
+
+    #logo                                 /* logo de la capcalera */
+        width: 25%                        // amplada petita adaptable a la pàgina
+        margin-right: auto                // marge de separació amb els elements clicables adaptable
+
+    img                                   /* imatge del logo */
+        width: 100%                       // ocupa tota l'amplada del seu contenidor
+
+    ul                                    /* elements clicables */
+        display: flex                     // Flexbox
+        flex-direction: row               // alineacio elements horitzontalment
+        align-items: center               // centrar verticalment
+
+        li a:not(.btn)                    /* elements clicables menys el boto */
+            color: $azul-oscuro!important // sobreescriu color de text 
+            font-weight: bold             // text en negreta
+
+        li a:not(.btn):hover              /* elements clicables menys el boto quan passa mouse per sobre */       
+            color: $azul-medio!important  // sobreescriu color de text
+
+        li .cesta                         /* element clicable cistella */                       
+            display: flex                 // Flexbox
+            flex-direction: column        // alineacio elements verticalment
+            align-items: center           // centrar horitzontalment
+
+        li:not(:last-child)               /* elements clicables menys l'ultim */
+            padding-right: 10px           // espaiat dret perque no estiguin tan enganxats
+
+    .btn                                  /* boto clicable */
+        color: $blanc                     // color text
+        background-color: $azul-medio     // color de fons
+        border-color: $azul-medio         // color voltant
+        font-size: 14px                   // mida text
+        padding: 8px                      // espaiat text dins de boto
+
+    .btn:hover                            /* boto clicable quan passa mouse per sobre */
+        color: $azul-medio                // color text
+        background-color: $blanc          // color fons
+        border-color: $azul-medio         // color voltant
+
+    i                                     /* icona cistella */
+        font-size: 18px                   // mida icona
